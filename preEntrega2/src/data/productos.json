@@ -5,7 +5,7 @@
         "descripcion":"Aros de oro alargados envuelto en perlas. Elegancia real para resaltar tu belleza.",
         "precio":3000,
         "cantidad": 1,
-        "categoria": "Aros",
+        "categoria": "aros",
         "id": 1 
     },
     {
@@ -14,7 +14,7 @@
         "descripcion":"Argollas simples, elegantes, de plata fina. Un toque de distinción para tu estilo diario.",
         "precio":3000,
         "cantidad": 1,
-        "categoria": "Aros",
+        "categoria": "aros",
         "id": 2 
     },
     {
@@ -23,7 +23,7 @@
         "descripcion":"Oro brillante abraza perlas grandes. Aros que deslumbran con encanto atemporal",
         "precio":3000,
         "cantidad": 1,
-        "categoria": "Aros",
+        "categoria": "aros",
         "id": 3 
     },
     {
@@ -32,7 +32,7 @@
         "descripcion":"Dos pulseras, infinitas posibilidades. Dijes delicados en oro para un toque de armonía.",
         "precio":3000,
         "cantidad": 1,
-        "categoria": "Pulceras",
+        "categoria": "pulceras",
         "id": 4 
     }
 ]

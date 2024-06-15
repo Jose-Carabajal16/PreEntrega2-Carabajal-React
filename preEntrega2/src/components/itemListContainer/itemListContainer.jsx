@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
-import { pedirProductos } from "../../helpers/pedirDatos";
+import { pedirProductos } from "../../helpers/pedirProductos";
 import Item from "../item/item";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
-  console.log(productos);
+  const { categoryId } = useParams();
 
   useEffect(() => {
     pedirProductos()
       .then((res) => {
-        setProductos(res);
+        if (categoryId) {
+          setProductos(res.filter((produ) => produ.categoria === categoryId));
+        } else {
+          setProductos(res);
+        }
       });
-  }, []);
+  }, [categoryId]);
 
   return (
     <div className="container contenido">
