@@ -1,16 +1,16 @@
 
 import './App.css'
 import Navbar from './components/navBar/navBar'
-import ItemsListContainer from './components/container/itemListContainer/itemListContainer'
-import ContenedorProductos from './components/container/contenedorProductos/contenedorProductos'
+import ItemsListContainer from './components/itemListContainer/itemListContainer'
+import ItemDetailContainer from './components/itemDetailContainer/itemDetailContainer'
 
 function App() {
 
   return (
     <div>
       <Navbar />
-      <ItemsListContainer  greeting={'Afrodita-Tienda de Joyas'}/>
-      <ContenedorProductos />
+      <ItemsListContainer />
+      <ItemDetailContainer itemId={2} />
 
     </div>
 
