@@ -5,12 +5,20 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+/* colores */
+:root {
+  --clr-main: #D1C7BD;
+  --clr-titulo: #5E4A41;
+  --clr-white: #fdfdfd;
+  --clr-black: #141010;
+  --clr-gray: #ede9e3;
+}
 .navBar {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b0714e;
+  background-color: var(--clr-main);
 }
 .logo {
   text-decoration: none;
@@ -37,4 +45,52 @@
   display: flex;
   justify-content: center;
   margin: 20px;
+}
+/*Tarjetas*/
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  position: relative;
+  width: 400px;
+  height: 650px;
+  margin: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.6s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 25px;
+}
+.card:hover{
+  transform: scale(1.02);
+}
+.card img{
+  width: 400px;
+}
+.titulo-card{
+  margin-bottom: 8px;
+
+}
+.detalle{
+  margin: 20px;
+}
+.descripcion{
+  margin-bottom: 5px;
+}
+.precio{
+  font-weight: 500;
+}
+.agregar{
+  margin-top: 5px;
+  background-color: var(--clr-titulo);
+  color: var(--clr-white);
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.agregar a{
+  text-decoration: none;
+  color: var(--clr-white);
 }
